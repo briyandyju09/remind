@@ -55,4 +55,4 @@ If you encounter any problems or have suggestions, please file an issue on the p
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed under- see the LICENSE.md file for details
