@@ -1,58 +1,54 @@
 # ReMind
 
-A Flutter app to reduce overconsumption by tracking purchases.
+> A Flutter app that curbs over-consumption by tracking what you already own.
+
+## Stack
+
+- **Framework:** Flutter (Dart, SDK `>=3.0.0 <4.0.0`)
+- **State management:** `provider`
+- **Local storage:** [Hive](https://pub.dev/packages/hive) (`hive`, `hive_flutter`)
+- **Utilities:** `uuid`, `intl`, `shared_preferences`
 
 ## Description
 
-ReMind is a Flutter-based mobile application designed to help users track their purchased items, manage their inventory, and ultimately reduce over-consumption. By providing a clear overview of what they own, users can make more informed purchasing decisions, avoid buying duplicates, and be more mindful of their consumption habits.
+ReMind is a Flutter mobile app designed to help users track their purchased items, manage their
+inventory, and reduce over-consumption. By giving a clear overview of what they already own,
+users can make more informed purchasing decisions, avoid buying duplicates, and be more mindful
+of their consumption habits.
 
-### Features
-*   **Inventory Management:** Keep a digital record of all your items.
-*   **Receipt Scanner:** Easily add items by scanning your shopping receipts.
-*   **Grocery List Checker:** Check your shopping list against your current inventory to avoid buying things you already have.
-*   **Search & Filter:** Quickly find items in your inventory with powerful search and filtering options.
-*   **Smart Sorting:** Sort items by name, category, date added, or items that are running low.
-*   **Local Storage:** Your data is stored securely on your device.
+## Features
 
-## Getting Started
+- **Inventory Management:** keep a digital record of all your items.
+- **Receipt Scanner:** add items by scanning shopping receipts.
+- **Grocery List Checker:** check a shopping list against your inventory to avoid rebuying things you already have.
+- **Search & Filter:** quickly find items with search and filtering.
+- **Smart Sorting:** sort by name, category, date added, or items running low.
+- **Local Storage:** data is stored on-device (Hive).
+
+> **Prototype note:** the **receipt OCR**, **suggestions**, and **analytics** are currently
+> **simulated** (backed by mock services). The data flow and UI are in place, but real OCR and
+> analytics are not wired up yet.
+
+## How to Build / Run
 
 ### Dependencies
 
-*   Flutter SDK: >=3.0.0 <4.0.0
-*   Android Studio or Visual Studio Code
+- Flutter SDK (`>=3.0.0 <4.0.0`)
+- Android Studio or VS Code with a connected device/emulator
 
-### Installing
+### Steps
 
-1.  Clone the repository:
-    ```
-    git clone https://github.com/briyandyju09/remind.git
-    ```
-2.  Navigate to the project directory:
-    ```
-    cd remind
-    ```
-3.  Install the dependencies:
-    ```
-    flutter pub get
-    ```
-
-### Executing program
-
-1.  Ensure you have a device connected or an emulator running.
-2.  Run the app:
-    ```
-    flutter run
-    ```
-
-## Help
-
-If you encounter any problems or have suggestions, please file an issue on the project's GitHub page.
+```bash
+git clone https://github.com/briyandyju09/remind.git
+cd remind
+flutter pub get
+flutter run
+```
 
 ## Version History
 
-*   1.0.0
-    *   Initial Release
+- **1.0.0** — Initial release
 
 ## License
 
-This project is licensed under- see the LICENSE.md file for details
+Released under the [MIT License](LICENSE).
